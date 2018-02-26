@@ -1,0 +1,18 @@
+<div class="ui-g ui-fluid">
+
+  <div class="ui-g-12 ui-md-2">
+      <span class="">Magasin : </span><br>
+      <p-dropdown [options]="cities2" [(ngModel)]="selectedCity2" optionLabel="name"></p-dropdown>
+  </div>
+
+  <div class="ui-g-12 ui-md-2">
+      <span class="">Date de départ : </span>
+      <p-calendar [(ngModel)]="startDate"></p-calendar>
+  </div>
+
+  <div class="ui-g-12 ui-md-2">
+      <span class="">Date de fin : </span>
+      <p-calendar [ngStyle]="" [(ngModel)]="endDate"></p-calendar>
+  </div>
+
+
