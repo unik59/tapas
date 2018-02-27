@@ -5,3 +5,4 @@ export class Report {
   sales: number;
   refunds: number;
 }
+
