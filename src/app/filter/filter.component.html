@@ -1,0 +1,27 @@
+<form [formGroup]="form" >
+  <div class="ui-g ui-fluid">
+
+    <div class="ui-g-12 ui-md-2">
+      <span class="">Magasin : </span><br>
+      <p-dropdown formControlName="magasin" [options]="reports"  optionLabel="store" (onChange)="save()"></p-dropdown>
+    </div>
+
+    <div class="ui-g-12 ui-md-2">
+      <span class="">Date de départ : </span>
+      <p-calendar formControlName="startDate"></p-calendar>
+    </div>
+
+    <div class="ui-g-12 ui-md-2">
+      <span class="">Date de fin : </span>
+      <p-calendar formControlName="endDate"></p-calendar>
+    </div>
+
+  </div>
+
+</form>
+
+
+<p>Value: {{ form.value | json }}</p>
+<p>Validation status: {{ form.status }}</p>
+
+
